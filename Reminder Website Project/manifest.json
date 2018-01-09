@@ -1,0 +1,17 @@
+{
+  "name": "Hexatask Task Tracker",
+  "description": "Keep track of all of your tasks so you will never miss a deadline again!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+    "128": "add_button.png"
+  },
+  "app": {
+    "urls": [
+      "http://hexatask-ca.stackstaging.com/"
+    ],
+    "launch": {
+      "web_url": "http://hexatask-ca.stackstaging.com/"
+    }
+  }
+}

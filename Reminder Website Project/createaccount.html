@@ -1,0 +1,152 @@
+<!doctype="html">
+<html>
+<head>
+    <title>Penabela Create Account</title>
+    <link rel="stylesheet" type="text/css" href = "createaccount.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <script src = "jquery-3.2.1.min.js"></script>
+    
+    
+    
+</head>
+    
+    
+    
+<body>
+    <center>
+    <img src = "icon.png" id = "logo">
+    <h1 id = "welcome-text">Welcome Aboard!</h1>
+        
+    <p id = "error-field"></p>
+        
+        
+    <div id = "sign-up">
+        
+        <p id="create-account-text">Create Account</p>
+        
+        
+        
+        <form action="createaccount.php" method="post" id = "create-account-form">
+            
+            <div class = "input-field">
+            <label for ="email" class="label-text">Email</label>
+            <input type = "text" name = "email" id = "email" class="input-bar" placeholder = "e.g. user-name@yahoo.com">
+            <br>
+            </div>
+            
+            <div class = "input-field">
+            <label for ="user-name" class="label-text">Username</label>
+            <input type = "text" name = "user-name" id = "user-name" class="input-bar" placeholder = "e.g. Penabela2017">
+            <br>    
+            </div>
+            
+            <div class = "input-field">
+            <label for ="password" class="label-text">Password</label>
+            <input type = "password" name = "password" id = "password" class="input-bar" placeholder = "Must be at least 6 characters long!">
+            <br>     
+            </div>
+            
+            <div class = "input-field">
+            <label for ="password-confirm" class="label-text">Re-enter Passowrd</label>
+            <input type = "password" name = "password-confirm" id = "password-confirm" class="input-bar" placeholder = "Must be at least 6 characters long">   
+            </div>
+            
+        </form>
+            
+            <input type = "image" src = "submit-icon.png" id = "input-submit">
+            <a href = "index.php"><img src = "return-icon.png" id= "return-img"></a>
+
+    </div>   
+
+    </center>
+    
+    <script type="text/javascript">
+        
+        
+        
+        
+        
+        function validateEmail(email) {
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                
+                return re.test(email.toLowerCase());
+            }
+        
+        
+        $("#input-submit").click(function(){
+            var errorString = "";
+            
+            // email validation
+            if ($("#email").val == ""){
+                errorString += "Please provide your email address<br>";
+            } else {
+                if (!validateEmail($("#email").val())){
+                errorString += "Invalid email address <br>";
+                }
+            }
+            
+            if ($("#user-name").val == ""){
+                errorString += "Please provide a username address<br>";
+            }
+            
+            // password valiation
+            if ($("#password").val().length == 0){
+                errorString += "Please provide a password for your account<br>";
+            } else if ($("#password").val().length<6){
+                errorString += "Invalid password, password must be at least 6 characters long <br>";
+            }
+            
+            if($("#password").val() != $("#password-confirm").val()){
+                errorString += "Passwords do not match <br>";
+            }
+            
+            
+            if(errorString!=""){
+                $("#error-field").html(errorString);
+            }
+            else{
+                $("#error-field").html("Account successfully created!");
+                $("#error-field").css("color", "green");
+            }
+        });
+        
+        
+    
+
+    </script>
+    
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

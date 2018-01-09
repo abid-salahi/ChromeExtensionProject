@@ -1,0 +1,86 @@
+#logo{
+            width: 20%;
+            margin: 0px auto;
+            
+            
+        }
+#welcome-text{
+   font-family:fantasy;
+   font-weight: 1;
+   color:red;
+   
+}
+
+#sign-up{
+    position:relative;
+    top: 25px;;
+    background-color: #EFEFEF;
+    width: 20%;
+    height: 25%;
+    border-radius: 10%;
+    border-style:groove;
+    border-width: thin;
+    border-color: darkgrey;
+    
+    
+}
+#create-account-text{
+    float:left;
+    margin-left:5%;
+    margin-top: 3%;
+    font-family:fantasy;
+    font-size-adjust: auto;
+    
+}
+#create-account-form{
+    clear:both;
+    float:left;
+    margin-left:5%;
+    margin-top: 3%; 
+}
+.label-text{
+    font-family: fantasy;
+    float:left;
+}
+#email{
+    border-radius: 10%;
+    border-style: solid;
+    border-color: lightgray;
+}
+.input-bar{
+    float:right;
+    margin-left:20px;
+    width:50%;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: lightgray;
+}
+.input-field{
+    padding-bottom: 10px;
+}
+#input-submit{
+    margin-top:40px;
+    margin-left: 50%;
+    float: left;
+}
+#return-img{
+    position: relative;
+    margin-top:10%;
+    left: 15%;
+    width:8%;
+  	
+    
+}
+#input-submit{
+    position: relative;
+    left: -3%;
+    width:10%;
+    margin-top: 5%;
+    
+    
+    
+}
+#error-field{
+    color:red;
+}
+
