@@ -1,5 +1,5 @@
-# ChromeExtensionProject
+# Task Reminder Project
 
 
-We'll be working on our Chrome Extension here. @Peng @Angela @Abid
+We'll be working on our Chrome Extension here. @Peng @Abid
 © 
