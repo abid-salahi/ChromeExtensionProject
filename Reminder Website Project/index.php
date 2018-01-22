@@ -345,7 +345,7 @@
                           </div>
                         </div>
                       <a class="nav-link" href="createaccount.php">Create Account</a>
-                      <a class="nav-link" href="#">About Us</a>
+                      
                   </div>
           </nav>
         
